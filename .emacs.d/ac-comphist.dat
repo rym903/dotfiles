@@ -1,0 +1,42 @@
+((("/Applications/" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("jupyter" .
+   [1 0 0 0 0 0 0])
+  ("random_rr" .
+   [1 0 0 1 0 0 0 0 0])
+  ("static" .
+   [0 0 1 1 0 0])
+  ("stdio" .
+   [0 0 0 2 0])
+  ("include" .
+   [0 0 0 2 0 0 0])
+  ("load" .
+   [1 0 0 0])
+  ("load-path" .
+   [2 0 0 0 0 0 0 0 0])
+  ("defun" .
+   [1 0 0 0 0])
+  ("let" .
+   [2 0 0])
+  ("dolist" .
+   [1 0 0 0 0 0])
+  ("path" .
+   [2 0 0 0])
+  ("paths" .
+   [2 0 0 0 0])
+  ("default-directory" .
+   [1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("expand-file-name" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("user-emacs-directory" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("add-to-list" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("if" .
+   [1 0])
+  ("fboundp" .
+   [0 0 0 0 0 1 0])
+  ("normal-top-level-add-subdirs-to-load-path" .
+   [0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("cat" .
+   [1 0 0])))
