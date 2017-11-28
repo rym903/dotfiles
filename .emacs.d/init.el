@@ -14,7 +14,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (wombat)))
- '(package-selected-packages (quote (ac-emacs-eclim))))
+ '(package-selected-packages (quote (quickrun ac-emacs-eclim))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -41,3 +41,11 @@
 	(add-to-list 'load-path default-directory)
 	(if (fboundp 'normal-top-level-add-subdirs-to-load-path)
 	    (normal-top-level-add-subdirs-to-load-path))))))
+
+;;C-tをタブ切り替えに設定;;
+(define-key global-map (kbd "C-t")'other-window)
+
+;;rpをreplace-stringのエイリアスに
+(defalias 'rp 'replace-string)
+;;qrをquickrunのエイリアスに
+(defalias 'qr 'quickrun)
