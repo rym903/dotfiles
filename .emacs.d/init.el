@@ -14,7 +14,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (wombat)))
- '(package-selected-packages (quote (quickrun ac-emacs-eclim))))
+ '(package-selected-packages (quote (multi-term smooth-scroll quickrun ac-emacs-eclim))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -81,4 +81,14 @@
 
 (global-set-key (kbd "M-c") 'copy-whole-line)
 (global-set-key (kbd "M-K") 'kill-whole-line)
+
+;;起動時のうざい下画面をなくす
+(setq inhibit-startup-message t)
+;;対応するかっこをハイライトする
+(show-paren-mode t)
+;;スクロールがスムーズに
+(require 'smooth-scroll)
+(smooth-scroll-mode t)
+;;C-vスクロール時に何行かは重複させる
+(setq next-screen-context-lines 5)
 
