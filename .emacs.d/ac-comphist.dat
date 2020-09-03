@@ -1,42 +1,100 @@
-((("/Applications/" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("jupyter" .
-   [1 0 0 0 0 0 0])
-  ("random_rr" .
-   [1 0 0 1 0 0 0 0 0])
-  ("static" .
-   [0 0 1 1 0 0])
-  ("stdio" .
-   [0 0 0 2 0])
-  ("include" .
-   [0 0 0 2 0 0 0])
-  ("load" .
-   [1 0 0 0])
-  ("load-path" .
-   [2 0 0 0 0 0 0 0 0])
-  ("defun" .
+((("title" .
    [1 0 0 0 0])
-  ("let" .
-   [2 0 0])
-  ("dolist" .
-   [1 0 0 0 0 0])
-  ("path" .
-   [2 0 0 0])
-  ("paths" .
+  ("url" .
+   [1 0 0])
+  ("text" .
+   [1 0 0 0])
+  ("find" .
+   [1 0 0 0])
+  ("item" .
+   [3 0 0 0])
+  ("root" .
+   [1 0 0 0])
+  ("tree" .
+   [1 0 0 0])
+  ("ElementTree" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("close" .
    [2 0 0 0 0])
-  ("default-directory" .
-   [1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("expand-file-name" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("user-emacs-directory" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("add-to-list" .
+  ("group" .
+   [2 0 0 0 0])
+  ("sec" .
+   [2 0 0])
+  ("search" .
+   [1 0 0 0 0 0])
+  ("local_optima" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("opt1000cities" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("input_file" .
+   [3 0 0 0 0 0 0 0 0 0])
+  ("write" .
+   [3 0 0 0 0])
+  ("data_local_optima" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("output_file" .
+   [3 0 0 0 0 1 0 1 0 0 0])
+  ("pattern" .
+   [1 0 0 0 1 0 0])
+  ("tmp_double" .
+   [0 0 0 0 0 0 0 1 0 0])
+  ("result_height" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("r" .
+   [1])
+  ("quickrun" .
+   [1 0 0 0 0 0 0 0])
+  ("replace-string" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("defalias" .
+   [1 0 0 0 0 0 0 1])
+  ("hello_world" .
    [0 0 0 0 0 0 1 0 0 0 0])
-  ("if" .
-   [1 0])
-  ("fboundp" .
-   [0 0 0 0 0 1 0])
+  ("cat" .
+   [1 0 0])
   ("normal-top-level-add-subdirs-to-load-path" .
    [0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("cat" .
-   [1 0 0])))
+  ("fboundp" .
+   [0 0 0 0 0 1 0])
+  ("if" .
+   [1 0])
+  ("add-to-list" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("user-emacs-directory" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("expand-file-name" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("default-directory" .
+   [1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("paths" .
+   [2 0 0 0 0])
+  ("path" .
+   [2 0 0 0])
+  ("dolist" .
+   [1 0 0 0 0 0])
+  ("let" .
+   [2 0 0])
+  ("defun" .
+   [1 0 0 0 0])
+  ("load-path" .
+   [2 0 0 0 0 0 0 0 0])
+  ("load" .
+   [1 0 0 0])
+  ("include" .
+   [0 0 0 2 0 0 0])
+  ("stdio" .
+   [0 0 0 2 0])
+  ("static" .
+   [0 0 1 1 0 0])
+  ("random_rr" .
+   [1 0 0 1 0 0 0 0 0])
+  ("jupyter" .
+   [1 0 0 0 0 0 0])
+  ("/Applications/" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("done" .
+   [3 0 0 0])
+  ("FILE" .
+   [1 0 0 0])
+  ("do" .
+   [1 0])))
