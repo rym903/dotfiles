@@ -259,11 +259,6 @@ function a () {
     ./a.out < input
   fi
 }
-##############
-### KAGGLE ###
-##############
-export KAGGLE_USERNAME=ryomanakagawa
-export KAGGLE_KEY=33df9527253d8d7cd4784e539a84a628
 
 
 
