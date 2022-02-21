@@ -3,9 +3,11 @@ export PS1='\W\$'
 export XDG_CONFIG_HOME='~/.config'
 export GOOGLE_APPLICATION_CREDENTIALS="/Users/ryomanakagawa/keys/gcp_master_key_ryoma.json"
 export BASH_SILENCE_DEPRECATION_WARNING=1
-
 # added by Anaconda3 4.4.0 installer
 # export PATH="/anaconda3/bin:$PATH"  # commented out by conda initialize
+export PATH=/Users/ryomanakagawa/opt/anaconda3/bin:$PATH
+export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # ドットの数で表現
 alias ..='cd ..'
@@ -47,17 +49,6 @@ function readbash () {
   source .bash_profile
   cd $tmp
 }
-function impl () { 
-  if [ $# = 1 ]; then
-    g++ $1
-  else
-    g++ ans.cpp
-  fi
-  if [ $? != 0 ]; then
-    return 1
-  fi
-  ./a.out < input; 
-  }
 # 出力の後に改行を入れる
 function add_line {
   if [[ -z "${PS1_NEWLINE_LOGIN}" ]]; then
@@ -184,6 +175,15 @@ function mkABCdir () {
   touch input
   cd ../..
 }
+function init_abc () {
+  cat snippet.txt > a.cpp
+  cat snippet.txt > b.cpp
+  cat snippet.txt > c.cpp
+  cat snippet.txt > d.cpp
+  cat snippet.txt > e.cpp
+  cat snippet.txt > f.cpp
+  echo > input
+}
 
 function ojd () {
   if [ -e test ]; then
@@ -219,25 +219,52 @@ function ojs () {
     oj s ans.cpp
   fi
 }
+
+function pjt () {
+    if [ $# = 1 ]; then 
+        oj t -c "python3 $1"
+    else 
+        oj t -c "python3 ans.py"
+    fi
+}
+
+function pjdt () {
+    ojd $1
+    pjt
+}
+
+function impl () { 
+  if [ $# = 1 ]; then
+    g++ $1
+  else
+    g++ ans.cpp
+  fi
+  if [ $? != 0 ]; then
+    return 1
+  fi
+  ./a.out < input; 
+  }
+
+function p () {
+    if [ $# = 1 ]; then 
+        python3 $1 < input 
+    else 
+        python3 ans.py < input 
+    fi 
+}
+function a () {
+  if [ $# = 1 ]; then
+    ./a.out < $1
+  else
+    ./a.out < input
+  fi
+}
 ##############
 ### KAGGLE ###
 ##############
-export KAGGLE_USERNAME=rymkagr
-export KAGGLE_KEY=2676a266534eb7b983bc956818739306
+export KAGGLE_USERNAME=ryomanakagawa
+export KAGGLE_KEY=33df9527253d8d7cd4784e539a84a628
 
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/ryomanakagawa/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/ryomanakagawa/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/ryomanakagawa/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/ryomanakagawa/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+
 
